@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <Windows.h>
 
 #include "Figure.h"
 #include "Triangle.h"
@@ -6,7 +7,7 @@
 #include "Right_Triangle.h"
 #include "Isosceles_Triangle.h"
 #include "Equilateral_Triangle.h"
-#include "Rectangle.h"
+#include "Rectangles.h"
 #include "Parallelogram.h"
 #include "Rhombus.h"
 #include "Square.h"
@@ -18,6 +19,8 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "rus");
+	/*SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);*/
 	try {
 		Triangle triangle("Треугольник", 10, 20, 30, 50, 60, 70);
 		print(&triangle);
@@ -55,7 +58,7 @@ int main()
 	catch (Own_exception_class& e) { cerr << e.what() << endl; };
 
 	try {
-		Rectangle rectangle("Прямоугольник", 10, 20);
+		Rectangles rectangle("Прямоугольник", 10, 20);
 		print(&rectangle);
 	}
 	catch (Own_exception_class& e) { cerr << e.what() << endl; };
