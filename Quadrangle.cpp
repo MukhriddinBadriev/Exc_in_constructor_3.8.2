@@ -13,17 +13,17 @@
 		C = new_C;
 		D = new_D;
 		if ((new_A + new_B + new_C+new_D) != 360) {
-			cout << get_name() << "(стороны " << a << " ," << b << " ," << c << " ," << d
-				<< "; углы " << A << " ," << B << " ," << C << " ," << D << ") ";
-			throw Own_exception_class(" не был создан. ѕричина: сумма углов не равна 360\n");
+			cout << get_name() << "(sides: " << a << " ," << b << " ," << c << " ," << d
+				<< "; corners: " << A << " ," << B << " ," << C << " ," << D << ") ";
+			throw Own_exception_class(" was not created. Reason: sum of angles is not equal to 360\n");
 		}
 		if (sides_count != 4) {
-			cout << get_name() << "(стороны " << a << " ," << b << " ," << c << " ," << d
-				<< "; углы " << A << " ," << B << " ," << C << " ," << D << ") ";
-			throw Own_exception_class(" не был создан. ѕричина: количество сторон не равно 4\n");
+			cout << get_name() << "(sides: " << a << " ," << b << " ," << c << " ," << d
+				<< "; corners: " << A << " ," << B << " ," << C << " ," << D << ") ";
+			throw Own_exception_class(" was not created. Reason: number of sides not equal to 4\n");
 		}
 	}
 	void Quadrangle::print_info() {
-		cout << get_name() << "(стороны " << a << " ," << b << " ," << c << " ," << d
-			<< "; углы " << A << " ," << B << " ," << C << " ," << D << ") создан" << "\n\n";
+		cout << get_name() << "(sides: " << a << " ," << b << " ," << c << " ," << d
+			<< "; corners: " << A << " ," << B << " ," << C << " ," << D << ") created" << "\n\n";
 	}

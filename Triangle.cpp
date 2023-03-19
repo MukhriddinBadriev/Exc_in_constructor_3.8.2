@@ -14,17 +14,17 @@ using namespace std;
 		B = new_B;
 		C = new_C;
 		if ((new_A + new_B + new_C) !=180) {
-			cout << get_name() << "(стороны " << a << " ," << b << " ," << c
-				<< "; углы " << A << " ," << B << " ," << C << ")" ;
-			throw Own_exception_class(" не был создан. ѕричина: сумма углов не равна 180\n");
+			cout << get_name() << "(sides: " << a << " ," << b << " ," << c
+				<< "; corners: " << A << " ," << B << " ," << C << ")" ;
+			throw Own_exception_class(" was not created. Reason: sum of angles is not equal to 180\n");
 		}
 		if (sides_count != 3) {
-			cout << get_name() << "(стороны " << a << " ," << b << " ," << c
-				<< "; углы " << A << " ," << B << " ," << C << ")";
-			throw Own_exception_class(" не был создан. ѕричина: количество сторон не равно 3\n");
+			cout << get_name() << "(sides: " << a << " ," << b << " ," << c
+				<< "; corners: " << A << " ," << B << " ," << C << ")";
+			throw Own_exception_class(" was not created. Reason: number of sides not equal to 3\n");
 		}
 	}
 	void Triangle::print_info()  {
-		cout << get_name() << "(стороны " << a << " ," << b << " ," << c
-			<< "; углы " << A << " ," << B << " ," << C << ") создан"<< "\n\n";
+		cout << get_name() << "(sides: " << a << " ," << b << " ," << c
+			<< "; corners: " << A << " ," << B << " ," << C << ") created"<< "\n\n";
 	}
